@@ -5,129 +5,152 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>TradingToolCrypto - Payment Bot</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
 
-		<!-- Header -->
-			<header id="header">
-				<a href="index.html" class="title">TradingToolCrypto</a>
-				<nav>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="basic.html">Basic</a></li>
-						<li><a href="pro.html">Pro</a></li>
-						<li><a href="elite.html">Elite</a></li>
-						<li><a href="join.html">Join</a></li>
-						<li><a href="payment-bot.html" class="active">Payment Bot</a></li>
-					</ul>
-				</nav>
-			</header>
+<head>
+	<title>TradingToolCrypto - Payment Bot</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<body class="is-preload">
 
-				<!-- Main -->
-					<section id="main" class="wrapper">
-						<div class="inner">
-							<h1 class="major" style="text-align:center">Payment Bot Instructions</h1>
-							<span class="image fit"><img src="images/paymentbot.jpg" alt="" /></span>
+	<!-- Header -->
+	<header id="header">
+		<a href="index.html" class="title">TradingToolCrypto</a>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="basic.html">Basic</a></li>
+				<li><a href="pro.html">Pro</a></li>
+				<li><a href="elite.html">Elite</a></li>
+				<li><a href="join.html">Join</a></li>
+				<li><a href="payment-bot.html" class="active">Payment Bot</a></li>
+			</ul>
+		</nav>
+	</header>
 
-							<h2 class="major" style="text-align:center">Download</h2>
-							<span><a href="https://github.com/TradingToolCrypto/MT5-TradingToolCrypto/archive/master.zip">Github</a><br />
-								<a href="https://github.com/TradingToolCrypto/TradingTool/wiki/1.-Installation">Installation instructions </a><br />
-							</span>
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-
-							<h2 class="major" style="text-align:center">Instructions</h2>
-							<p>The payment bot requires webrequests to communicate with coinpayments.net api to generate an invoice within Metatrader platform. Once you make a payment (send crypto to the address), coinpayments will send you a confirmation email. Once you have this email confirmation, please click the OK button. The robot will contact coinpayments api to verify the payment was a success then generate an access token for your license. Do not remove the payment bot until your license is activated. If the confirmation does not approve on your first try, please wait 10-15 minutes and try again. The license will expire at the end of each month. Once the license expires, reattach the payment bot to any chart within MT5 and generate another invoice.
-							</p>	
-							<p>
-								
-								<strong>Warning: </strong>If the invoice address and amount are blank, please select a different cryptocurrency. Sometimes Coinpayments.net disables networks without an announcement.<br>
-								<strong>Warning: </strong>Do not remove the payment_bot during a pending payment. Do not change the chart timeframe during a pending payment.<br>
-								<strong>Warning: </strong>Do n4ot close this window after making a payment. If you close this window before your payment is approved, you will lose your activation license. <br>
-								<strong>Warning: </strong>There is no way to recover your activation license. If you make this mistake, you must generate a new invoice AND PAY AGAIN.<br>
-							</p>
-
-							<h2 class="major" style="text-align:center">ALLOW WEB REQUESTS</h2>
-							<p>Open MetaTrader Platform, Click on Tools -> Options -> Expert Advisors and add the coinpayments URL. Enable  <strong>Allow WebRequest for listed URL</strong> and <strong>Allow DLL Imports</strong>.
-							</p>
-							<span style="text-align:center"><strong>Add URL:</strong> https://www.coinpayments.net</span><br>
-						
-							<span class="image center"><img src="images/webrequest.jpg" alt="" /></span>
-
-
-							<h2 class="major" style="text-align:center">ROBOT PARAMETERS</h2>
-							<p>
-								<strong>Select Package -</strong> Dropdown box including the available software packages.<br>
-								<strong>YourEmailAddress -</strong> Input a valid email address to receive the confirmation email. <br>
-								<strong>CryptoCoin -</strong> Dropdown box including the available coins for payment.<br>
-
-							</p>
-
-					
-
-							<h2 class="major" style="text-align:center">NETWORK FEES</h2>
-							<p>
-								When paying an invoice, you need to cover the network fees. If you don't cover the network fees, the amount received will be less than the invoice amount and license will not be activated.
-		
-							</p>
-							<h2 class="major" style="text-align:center">BITCOIN LIGHTNING PAYMENT</h2>
-							
-							<p>
-								The invoice address will be printed out in the Experts Tab. Right Click and Copy the text to notepad then to your bitcoin lightning wallet to make the payment. The string length is too long to display on the chart.</p>
-							
-							
-							
-							<div>
-
-
-								<h4 class="font_4" style="font-size:101px; line-height:1em; text-align:center">
-									<span style="text-shadow:#c8c8c8 1px 1px 0px, #b4b4b4 0px 2px 0px, #a0a0a0 0px 3px 0px, rgba(140, 140, 140, 0.498039) 0px 4px 0px, #787878 0px 0px 0px, rgba(0, 0, 0, 0.498039) 0px 5px 10px">
-										<span style="font-size:105px;">
-											<span class="color_23">
-												<span style="font-weight:bold">Easy&nbsp;Installation</span>
-											</span>
-										</span>
-									</span>
-								</h4>
-								<!-- Youtube MT5 Installation Video -->
-							</div>
-					</div>
-					</section>
-
-			</div>
-
-		<!-- Footer -->
-		<footer id="footer" class="wrapper style1-alt">
+		<!-- Main -->
+		<section id="main" class="wrapper">
 			<div class="inner">
-				<ul class="menu">
-					<li>&copy;2020 TradingToolCrypto. All rights reserved.</li>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="basic.html">Basic</a></li>
-					<li><a href="pro.html">Pro</a></li>
-					<li><a href="elite.html">Elite</a></li>
-					<li><a href="join.html">Join</a></li>
-					<li><a href="payment-bot.html">Payment Bot/a></li>
-					<li><a href="mt4-sada.html">SADA Robot</a></li>
-				</ul>
+				<h1 class="major" style="text-align:center">Payment Bot Instructions</h1>
+				<span class="image fit"><img src="images/paymentbot.jpg" alt="" /></span>
+
+				<h2 class="major" style="text-align:center">Instructions</h2>
+				<p>The payment bot requires webrequests to communicate with coinpayments.net api to generate an invoice
+					within Metatrader platform. Once you make a payment (send crypto to the address), coinpayments will
+					send you a confirmation email. Once you have this email confirmation, please click the OK button.
+					The robot will contact coinpayments api to verify the payment was a success then generate an access
+					token for your license. Do not remove the payment bot until your license is activated. If the
+					confirmation does not approve on your first try, please wait 10-15 minutes and try again. The
+					license will expire at the end of each month. Once the license expires, reattach the payment bot to
+					any chart within MT5 and generate another invoice.
+				</p>
+				<p>
+
+					<strong>Warning: </strong>If the invoice address and amount are blank, please select a different
+					cryptocurrency. Sometimes Coinpayments.net disables networks without an announcement.<br>
+					<strong>Warning: </strong>Do not remove the payment_bot during a pending payment. Do not change the
+					chart timeframe during a pending payment.<br>
+					<strong>Warning: </strong>Do n4ot close this window after making a payment. If you close this window
+					before your payment is approved, you will lose your activation license. <br>
+					<strong>Warning: </strong>There is no way to recover your activation license. If you make this
+					mistake, you must generate a new invoice AND PAY AGAIN.<br>
+				</p>
+
+				<h2 class="major" style="text-align:center">ALLOW WEB REQUESTS</h2>
+				<p>Open MetaTrader Platform, Click on Tools -> Options -> Expert Advisors and add the coinpayments URL.
+					Enable <strong>Allow WebRequest for listed URL</strong> and <strong>Allow DLL Imports</strong>.
+				</p>
+				<span style="text-align:center"><strong>Add URL:</strong> https://www.coinpayments.net</span><br>
+
+				<span class="image center"><img src="images/webrequest.jpg" alt="" /></span>
+
+
+				<h2 class="major" style="text-align:center">ROBOT PARAMETERS</h2>
+				<p>
+					<strong>Select Package -</strong> Dropdown box including the available software packages.<br>
+					<strong>YourEmailAddress -</strong> Input a valid email address to receive the confirmation email.
+					<br>
+					<strong>CryptoCoin -</strong> Dropdown box including the available coins for payment.<br>
+
+				</p>
+
+
+
+				<h2 class="major" style="text-align:center">NETWORK FEES</h2>
+				<p>
+					When paying an invoice, you need to cover the network fees. If you don't cover the network fees, the
+					amount received will be less than the invoice amount and license will not be activated.
+
+				</p>
+				<h2 class="major" style="text-align:center">BITCOIN LIGHTNING PAYMENT</h2>
+
+				<p>
+					The invoice address will be printed out in the Experts Tab. Right Click and Copy the text to notepad
+					then to your bitcoin lightning wallet to make the payment. The string length is too long to display
+					on the chart.</p>
+
+
+
+				<div>
+
+
+					<h4 class="font_4" style="font-size:101px; line-height:1em; text-align:center">
+						<span
+							style="text-shadow:#c8c8c8 1px 1px 0px, #b4b4b4 0px 2px 0px, #a0a0a0 0px 3px 0px, rgba(140, 140, 140, 0.498039) 0px 4px 0px, #787878 0px 0px 0px, rgba(0, 0, 0, 0.498039) 0px 5px 10px">
+							<span style="font-size:105px;">
+								<span class="color_23">
+									<span style="font-weight:bold">Easy&nbsp;Installation</span>
+								</span>
+							</span>
+						</span>
+					</h4>
+
+					<h2 class="major" style="text-align:center">Download</h2>
+					<span style="text-align:center">
+						<a
+							href="https://github.com/TradingToolCrypto/MT5-TradingToolCrypto/archive/master.zip">Github</a><br />
+						<a href="https://github.com/TradingToolCrypto/TradingTool/wiki/1.-Installation">Installation
+							instructions </a><br />
+					</span>
+					<!-- Youtube MT5 Installation Video -->
+				</div>
 			</div>
-		</footer>
+		</section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+	</div>
 
-	</body>
+	<!-- Footer -->
+	<footer id="footer" class="wrapper style1-alt">
+		<div class="inner">
+			<ul class="menu">
+				<li>&copy;2020 TradingToolCrypto. All rights reserved.</li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="basic.html">Basic</a></li>
+				<li><a href="pro.html">Pro</a></li>
+				<li><a href="elite.html">Elite</a></li>
+				<li><a href="join.html">Join</a></li>
+				<li><a href="payment-bot.html">Payment Bot</a></li>
+				<li><a href="mt4-sada.html">SADA Robot</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
