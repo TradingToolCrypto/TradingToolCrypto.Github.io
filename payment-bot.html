@@ -40,16 +40,18 @@
 
 							<h2 class="major" style="text-align:center">Instructions</h2>
 							<p>The payment bot requires webrequests to communicate with coinpayments.net api to generate an invoice within Metatrader platform. Once you make a payment (send crypto to the address), coinpayments will send you a confirmation email. Once you have this email confirmation, please click the OK button. The robot will contact coinpayments api to verify the payment was a success then generate an access token for your license. Do not remove the payment bot until your license is activated. If the confirmation does not approve on your first try, please wait 10-15 minutes and try again. The license will expire at the end of each month. Once the license expires, reattach the payment bot to any chart within MT5 and generate another invoice.
-								<br>
+							</p>	
+							<p>
+								
 								<strong>Warning: </strong>If the invoice address and amount are blank, please select a different cryptocurrency. Sometimes Coinpayments.net disables networks without an announcement.<br>
 								<strong>Warning: </strong>Do not remove the payment_bot during a pending payment. Do not change the chart timeframe during a pending payment.<br>
 								<strong>Warning: </strong>Do n4ot close this window after making a payment. If you close this window before your payment is approved, you will lose your activation license. <br>
-								<strong>Warning: </strong>There is no way to recover your activation license. If you make this mistake, you must generate a new invoice AND PAY AGAIN.
+								<strong>Warning: </strong>There is no way to recover your activation license. If you make this mistake, you must generate a new invoice AND PAY AGAIN.<br>
 							</p>
 
 							<h2 class="major" style="text-align:center">ENABLE WEB REQUESTS</h2>
 							<p>Open MetaTrader Platform, Click on Tools -> Options -> Expert Advisors and add the coinpayments URL. Enable  <strong>Allow WebRequest for listed URL</strong> and <strong>Allow DLL Imports</strong>.</p>
-							<td><strong>Add URL:</strong> https://www.coinpayments.net</td>
+							<td style="text-align:center"><strong>Add URL:</strong> https://www.coinpayments.net</td><br>
 							<span class="image"><img src="images/webrequest.jpg" alt="" /></span>
 
 
