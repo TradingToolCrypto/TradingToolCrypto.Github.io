@@ -45,12 +45,22 @@
 								backtesting strategies within the built in Strategy Tester. The historical crypto chart 
 								data can also be exported from MetaTrader into CSV format for later storage or use. 
 							</p>
+
+							<p>The Crypto Charts robot collects one minute data (M1) from the exchanges via REST Api. 
+								Once the data is retrieved into MT5, the platform creates all higher time-frame charts automatically 
+								based on the M1 data providing accurate and high quality charting data. 
+								All opened charts regardless of the time-frame will update automatically in real-time. 
+								The robot powers all the higher time-frames simultaneously
+								from one robot which means, you only need one robot per market.
+							</p>
 							<h1 class="major">Supported Crypto Exchanges</h1>
 							<ul>
 								<li>Binance</li>
 								<li>Binance Futures </li>
 								<li>Binance US</li>
+								<li>Bitfinex</li>
 								<li>Bitmex</li>
+								<li>Bitstamp</li>
 								<li>BTSE</li>
 								<li>Bybit</li>
 								<li>Coinbase</li>
@@ -72,27 +82,22 @@
 							<h3>Digitex</h3>
 							<span class="image fit"><img src="images/CryptoCharts_Digitex.gif" alt="" /></span>
 							
-
-						    <!-- Table -->
-
 						<h2>Features</h2>
 						<ul>
-							<li>All Symbols supported from all exchanges</li>
-							<li>Real Time Charting for all Time-frames</li>
-							<li>Real Time Orderbooks with 10 Levels of Liquidity</li>
-							<li>Creates Tick Database from orderbook snapshot</li>
+							<li>All markets are supported from the crypto exchange</li>
+							<li>Real-time charting for all time-frames</li>
+							<li>Real-time orderbooks with 10 Levels of Liquidity</li>
+							<li>Creates tick database from orderbook snapshot</li>
 							<li>Download all historical data and export via CSV</li>
-							<li>Backtesting of robots and indicators </li>
-
-
+							<li>Supports backtesting of robots and indicators </li>
 						</ul>
 
 						<h2>Highlights</h2>
 						<ul>
-							<li>High Quality M1 data directly from exchanges</li>
-							<li>Higher Timeframes built from M1 data</li>
+							<li>High Quality M1 data directly from the crypto exchange</li>
+							<li>Higher time-frames built from M1 data</li>
 							<li>Select any Start Date </li>
-							
+							<li>Robot powers all time-frames for one market (BTCUSD) </li>	
 						</ul>
 
 						<h2>Wiki</h2>
@@ -103,14 +108,25 @@
 							
 						</ul>
 				          
-						<p>The Crypto Charts Plugin for MetaTrader 5 collects one minute data (M1) from the exchanges via REST Api. 
-							Once the data is retrieved into MT5, the platform creates all higher time-frame charts automatically 
-							based on the M1 data providing accurate and high quality charting data. 
-							All opened charts regardless of the time-frame will update automatically in real-time. 
-							The Crypto Charts MT5 plugin powers all the higher time-frames simultaneously
-							from one robot which means, you only need one robot per market.
-							
+						
+
+						<h2>ChartPro: Coming Soon</h2>
+						<span class="image fit"><img src="images/CryptoCharts_ChartPro.gif" alt="" /></span>
+						<p>The ChartPro Plugin for MetaTrader 5 is a new robot that does the same job as the Crypto Charts plugin with an easy to use 
+						user-interface that makes launching markets a breeze. There are no input parameters for the ChartPro, which means you simply click
+						a few buttons to launch up to 10 markets per exchange all from the same robot. Rate Limits are internally controlled based on the exchange 
+						and the number of markets being updated. All available markets are downloaded from the exchange asset list and shown within the UI. 
+						Quote precision and volume precision are automatically set and can be over-written by the user if required. A unique Symbol suffix is automatically
+						created based on the exchange that you select. Real-Time orderbook/tick data can be turned on and off. The chart data can be deleted easily within one click, if 
+						the quote precision and volume precision need to be changed. 
 						</p>
+
+						<ul>
+							<li>Easy to use</li>
+							<li>One robot powers all the charts</li>
+							<li>No input parameters</li>
+							<li>Ready to use with <a href="pro.html">CryptoBridgeDark</a></li>
+						</ul>
 						
 
 						</div>
