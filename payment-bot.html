@@ -9,10 +9,10 @@
 <html>
 
 <head>
-  <title>TradingToolCrypto - MetaTrader Trading Tools Redefined</title>
+  <title>TradingToolCrypto - PaymentBot</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <meta name="description" content="">
+  <meta name="description" content="How to make a payment within MT5 with TradingToolCrypto Paymentbot">
   <link rel="stylesheet" href="/assets/css/main.css" />
   <noscript>
   <link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
@@ -102,10 +102,10 @@
             Once you make a payment (send crypto to the address), Coinpayments will send you a confirmation email.
           </li>
           <li>
-            After you receive an email confirmation, click the OK button.
+            After you receive an email confirmation, click the Check Invoice button on the chart.
           </li>
           <li>
-            The Payment Robot will then try to contact Coinpayments API to verify the payment was a success then generate an access token for your license.
+            The Payment Robot will contact Coinpayment's API to verify the payment. If the payment was a success, the paymentBot will be removed automatically from the chart.
           </li>
           <li>
             <strong>Do not remove the payment bot until your license is activated.</strong>
@@ -117,7 +117,7 @@
             The license will expire at the end of each month.
           </li>
           <li>
-            Once the license expires, re-attach the payment bot to any chart within MT5 and generate another invoice.
+            Once the license expires, re-attach the payment bot to any chart and generate another invoice.
           </li>
         </ol>
 
@@ -127,8 +127,6 @@
           cryptocurrency. Sometimes coinpayments.net disables networks without an announcement.<br>
           <strong>Warning: </strong>Do not remove the payment_bot during a pending payment. Do not change the
           chart timeframe during a pending payment.<br>
-          <strong>Warning: </strong>Do not close this window after making a payment. If you close this window
-          before your payment is approved, you will lose your activation license. <br>
           <strong>Warning: </strong>There is no way to recover your activation license. If you make this
           mistake, you must generate a new invoice AND PAY AGAIN.<br>
         </p>
@@ -147,6 +145,7 @@
           <strong>YourEmailAddress -</strong> Input a valid email address to receive the confirmation email.
           <br>
           <strong>CryptoCoin -</strong> Dropdown box including the available coins for payment.<br>
+          <strong>Affiliate -</strong> Dropdown box including the available affiliate names.<br>
 
         </p>
 
@@ -186,7 +185,9 @@
     <div class="flex-rows">
       <section>
         <ul class="menu block">
-          <li><h3>MT5 Crypto Exchanges</h3></li>
+          <li>
+            <h3>MT5 Crypto Exchanges</h3>
+          </li>
           <li><a href="binance-us-mt5.html">Binance US MT5</a></li>
           <li><a href="binance-mt5.html">Binance Spot and Futures MT5</a></li>
           <li><a href="bitmex-mt5.html">Bitmex MT5</a></li>
@@ -196,7 +197,9 @@
       </section>
       <section>
         <ul class="menu block">
-          <li><h3>MT5 Packages</h3></li>
+          <li>
+            <h3>MT5 Packages</h3>
+          </li>
           <li><a href="crypto-charts.html">Charts</a></li>
           <li><a href="basic.html">Basic</a></li>
           <li><a href="pro.html">Pro</a></li>
@@ -206,7 +209,9 @@
       </section>
       <section>
         <ul class="menu block">
-          <li><h3>Software</h3></li>
+          <li>
+            <h3>Software</h3>
+          </li>
           <li><a href="all.html">All Products</a></li>
           <li><a href="pro.html">CryptoBridgePro</a></li>
           <li><a href="crypto-charts.html">Crypto Charts</a></li>
@@ -217,13 +222,17 @@
       </section>
       <section>
         <ul class="menu block">
-          <li><h3>Resources</h3></li>
+          <li>
+            <h3>Company</h3>
+          </li>
+          <li><a href="https://t.me/tradingtool" target="_blank">Annoucements</a></li>
+          <li><a href="https://tradingtoolcrypto.medium.com"target="_blank">Blog</a></li>
           <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="https://github.com/TradingToolCrypto/TradingTool/wiki">Wiki</a></li>
-          
         </ul>
         <ul class="menu block">
-          <li><h3>Social</h3></li>
+          <li>
+            <h3>Social</h3>
+          </li>
           <ul class="icons">
             
             <li><a target="_blank" href="https://twitter.com/realtradingtool" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
@@ -240,7 +249,7 @@
     </div>
   </div>
   <div class="copy">
-    <p>&copy;2020 TradingToolCrypto. All rights reserved.</p>
+    <p>&copy;2020-2021 TradingToolCrypto. All rights reserved.</p>
   </div>
 </footer>
     <!-- Scripts -->
